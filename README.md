@@ -6,6 +6,6 @@ this repository holds my solutions to the [advent of code](https://adventofcode.
 
 ## :computer: how-to
 
-project structure: `./<year>/<day>/<0|1>.py`
+project structure: `./<year>/<day>/<phase>.py`
 
-eg. `$ ./2018/01/0.py`
+eg. `$ ./18/01/00.py`
