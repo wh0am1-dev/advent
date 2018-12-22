@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+import sys
+
+
 def compare(a, b):
   c = 0
   d = ''
@@ -26,7 +30,7 @@ def search(data):
 
 
 if __name__ == '__main__':
-  with open('input.txt') as f:
+  with open(os.path.join(sys.path[0], 'input.txt')) as f:
     data = f.read().splitlines()
 
   print(search(data))
