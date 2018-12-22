@@ -4,6 +4,7 @@
 import os
 import sys
 
+# --------------------------------
 
 def compare(a, b):
   c = 0
@@ -17,6 +18,7 @@ def compare(a, b):
 
   return (c, d)
 
+# --------------------------------
 
 def search(data):
   for i in range(len(data)):
@@ -28,8 +30,10 @@ def search(data):
 
   return None
 
+# --------------------------------
 
 if __name__ == '__main__':
+
   with open(os.path.join(sys.path[0], 'input.txt')) as f:
     data = f.read().splitlines()
 

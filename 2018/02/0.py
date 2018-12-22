@@ -4,6 +4,7 @@
 import os
 import sys
 
+# --------------------------------
 
 def rep(n, id):
   for char in id:
@@ -12,16 +13,18 @@ def rep(n, id):
 
   return 0
 
+# --------------------------------
 
 if __name__ == '__main__':
-  twos = 0
-  threes = 0
 
   with open(os.path.join(sys.path[0], 'input.txt')) as f:
     data = f.read().splitlines()
 
-  for id in data:
-    twos += rep(2, id)
-    threes += rep(3, id)
+  two = 0
+  three = 0
 
-  print(twos * threes)
+  for id in data:
+    two += rep(2, id)
+    three += rep(3, id)
+
+  print(two * three)

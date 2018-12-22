@@ -41,11 +41,11 @@ class Fabric:
 # --------------------------------
 
 if __name__ == '__main__':
+
   with open(os.path.join(sys.path[0], 'input.txt')) as f:
     data = f.read().splitlines()
 
   fab = Fabric()
-
   for c in data:
     fab.claim(c)
 
