@@ -1,12 +1,12 @@
 <div align="center">
 
-# :christmas_tree: advent of code
+# :christmas_tree: advent of code :christmas_tree:
 
 this repository holds my solutions to the [advent of code](https://adventofcode.com) puzzles
 
 <br>
 
-## :computer: how-to
+## :snowman: how-to :snowman:
 
 `./<year>/<day>/<phase>.py`
 
