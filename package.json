@@ -1,0 +1,9 @@
+{
+  "name": "advent",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
