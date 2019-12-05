@@ -3,11 +3,12 @@
 const fs = require('fs')
 const path = require('path')
 
+const fuel = mass => Math.floor(mass / 3) - 2
+
 const ans = fs
   .readFileSync(path.join(__dirname, 'input'), 'utf8')
   .split('\n')
   .map(n => parseInt(n, 10))
-  .map(n => Math.floor(n / 3) - 2)
-  .reduce((acc, n) => acc + n, 0)
+  .reduce((acc, n) => acc + fuel(n), 0)
 
 console.log(ans)
