@@ -2,7 +2,8 @@
 
 const fs = require('fs')
 const path = require('path')
-const { Wire, Vec2 } = require('./Wire')
+const Vec2 = require('./Vec2')
+const Wire = require('./Wire')
 
 const origin = new Vec2(0, 0)
 const manhattan = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y)
