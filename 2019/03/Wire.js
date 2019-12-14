@@ -76,6 +76,19 @@ class Wire {
 
     this.segments.pop()
   }
+
+  intersections(w) {
+    const intersections = []
+
+    this.segments.forEach(segmentA => {
+      w.segments.forEach(segmentB => {
+        const p = segmentA.intersect(segmentB)
+        if (p) intersections.push(p)
+      })
+    })
+
+    return intersections
+  }
 }
 
 // ================================
