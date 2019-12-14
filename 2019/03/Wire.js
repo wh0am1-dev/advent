@@ -66,7 +66,7 @@ class Wire {
       const amount = parseInt(trans.slice(1))
       const origin = this.vertices[this.vertices.length - 1]
 
-      this.vertices.push(origin.add(NORMALS[direction].mul(amount)))
+      this.vertices.push(NORMALS[direction].mul(amount).add(origin))
     })
 
     this.segments = this.vertices.map((vert, i) => {
