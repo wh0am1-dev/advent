@@ -41,6 +41,10 @@ class Wire {
 
     return intersections
   }
+
+  length(p) {
+    // TODO: implement
+  }
 }
 
 // ================================
